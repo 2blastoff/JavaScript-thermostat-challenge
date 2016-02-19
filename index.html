@@ -6,6 +6,7 @@
   </head>
 
   <body>
+  <div class="center">
     <section>
       <h1 id="temperature"></h1>
       <p>
@@ -16,6 +17,7 @@
         <button id="powersaving-on-off">PSM on/off</button>
       </p>
     </section>
+  </div>
 
     <section id="weather">
       <form id="select-city">
@@ -30,8 +32,29 @@
     <div id="pic">
         <img class="displayed" src="http://orig02.deviantart.net/2278/f/2007/364/6/7/garianger_fyord_by_n1anaki.jpg" alt="fyord" width="300" height="200">
     </div>
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+
+    <iframe width="420" height="345"
+      src="http://www.youtube.com/embed/SRl9UZGQ3D4">
+    </iframe>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    async defer></script>
+    </script>
+
     <script src="src/Thermostat.js"></script>
     <script src="jquery-2.2.0.js"></script>
     <script src="src/interface.js"></script>
+
   </body>
 </html>

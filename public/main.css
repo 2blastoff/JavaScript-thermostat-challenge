@@ -1,3 +1,11 @@
+.center {
+    margin: auto;
+    width: 80%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    background-image: url("ttps://secure.static.tumblr.com/3231da342f69569c77057a2e3caf5bcb/6ijaatm/tcsn8k9wr/tumblr_static_431411.jpg");
+}
+
 .low {
   /*background-color: lightblue;*/
   background-image: url("http://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/oso.jpg?itok=2TXIGGNk");*/
@@ -16,6 +24,7 @@
 #weather {
   background-color: red;
   text-align: center;
+  width: 100%;
 }
 
 #power-saving-status {
