@@ -43,6 +43,6 @@ $( document ).ready(function() {
       var units = '&units=metric';
       $.get(url + token + units, function (data) {
         $("#city-temperature").text(data.main.temp + ' \u2103');
-      })
+      });
     }
 });
